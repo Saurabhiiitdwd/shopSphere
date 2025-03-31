@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    border: border-box; /*By default, when you set the width and height of an element, it only applies to the content area, not including padding and borders. However, when you use box-sizing: border-box;, the padding and borders are included within the width and height, making the element’s total size easier to manage.*/
+} 
+.navbar{
+    height:60px;
+    background-color: #0f1111;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+} 
+.logo{
+    height:50px;
+    width: 113px;
+    background-image: url('shopsphere.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.border{
+    border:2px solid transparent;
+}
+.border:hover{
+    border:1.5px solid white;
+}
+.deliver{
+    color:#cccccc;
+    font-size: 0.75rem;
+    margin-left: 15px;
+}
+.india{
+    font-size: 1rem;
+}
+.icon{
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.address{
+    height: 53.2;
+    
+    align-content:center;
+}
+.select{
+    color:black;
+    align-content:center;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.search{
+    margin-left: 10px;
+    display:flex;
+    width:620px;
+    height:40px;
+    justify-content: space-between;
+}
+.mag{
+    display: flex;
+    background-color: #febd68;
+    width: 45px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#placeholder{
+    width: 100%;
+    color:black;
+}
+span{
+    font-size: 0.7rem;
+}
+.second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.search:hover{
+    border: 2px solid orange;
+}
+sub{
+    font-size: 0.70rem;
+    font-weight: 700;
+}
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.all{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.deal{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.customer{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.registry{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.gift{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.sell{
+    height: 40px;
+    align-content: center;
+    margin-left: 15px;
+}
+.shop{
+    height: 40px;
+    align-content: center;
+    margin-right: 15px;
+}
+.left{
+    display: flex;
+}
+.hero{
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.msg{
+    height: 40px;
+    width: 90%;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.msg a{
+    color: #007185;
+    text-decoration: none;
+}
+.shop-sec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    color: black;
+    padding: 20px 0px 15px;
+    margin-top: 1rem;
+}
+.box a{
+    text-decoration:none;
+}
+.img{
+    height: 300px;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.img{
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.border2{
+    border:2px solid transparent;
+}
+.border2:hover{
+    border:1.5px solid rgb(22, 163, 234);
+}
+.footer{
+    margin-top: 15px;
+}
+.foot1{
+    background-color: #37575a;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot1 a{
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+.foot2{
+    height: 300px;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot2 p{
+    margin-top:16px;
+    font-weight: 700;
+}
+.foot2 a{
+    display: block;
+    margin-top:16px;
+    text-decoration: none;
+    font-size: 0.80 rem;
+    color: #dddddd;
+}
+.foot2 a:hover{
+    text-decoration: underline;
+}
+.foot3{
+    background-color: #222f3d;
+    border-top: 0.4px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    background-image: url('amazon_logo.png');
+}
+.foot4{
+    background-color: #0f1111;
+    height: 80px;
+}
+.foot4 a{
+    margin-left: 15px;
+    text-decoration: none;
+}
+.foot4 a:hover{
+    text-decoration: underline;
+}
+.f4a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 18px;
+}
+.f4b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    background-color: white;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00;
+}

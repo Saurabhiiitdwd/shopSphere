@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes - Shopsphere</title>
+    <link rel="stylesheet" href="Shopsphere.css">
+</head>
+<body>
+    <header>
+        <h1>Clothes Collection</h1>
+    </header>
+    
+    <section class="products">
+        <div class="product">
+            <img src="sofa.jpeg" alt="Sofa">
+            <h2 style="color: black;">Sofa</h2>
+            <p style="color: black;">Price: $999</p>
+            <button class="add-to-cart" onclick="addToCart('Sofa', 999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="bed.jpeg" alt="Bed">
+            <h2 style="color: black;">Bed</h2>
+            <p style="color: black;">Price: $599</p>
+            <button class="add-to-cart" onclick="addToCart('Bed', 599)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script>
+        function addToCart(item, price) {
+            alert(item + " added to cart for $" + price);
+        }
+    </script>
+</body>
+</html>
