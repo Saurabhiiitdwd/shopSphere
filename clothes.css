@@ -85,7 +85,7 @@
     left: 330px;
     bottom: 135px;
 }
-.addd{
+#addd{
     background-color: #f39c12;
     color: #fff;
     border: none;
@@ -164,7 +164,7 @@
     position: relative;
     top: 13px;
 }
-.add{
+#add{
     position: relative;
     top: 17px;
 }
@@ -245,7 +245,7 @@
     left: 330px;
     bottom: 135px;
 }
-.cart1{
+#cart1{
     background-color: #f39c12;
     color: #fff;
     border: none;
@@ -259,4 +259,8 @@
     bottom: 80px;
     height: 40px;
     width: 110px;
+}
+#c1img{
+    position: relative;
+    height: 320px;
 }
