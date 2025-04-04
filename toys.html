@@ -3,34 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes - Shopsphere</title>
-    <link rel="stylesheet" href="Shopsphere.css">
+    <title>Toys - Shopsphere</title>
+    <link rel="stylesheet" href="toys.css">
 </head>
 <body>
-    <header>
-        <h1>Clothes Collection</h1>
-    </header>
-    
-    <section class="products">
-        <div class="product">
-            <img src="Teddy.jpeg" alt="Teddy">
-            <h2 style="color: black;">Teddy</h2>
-            <p style="color: black;">Price: $11</p>
-            <button class="add-to-cart" onclick="addToCart('Teddy', 11)">Add to Cart</button>
+<!-- Column 1 -->
+    <div class="product-container">
+        <div class="product-card">
+            <img src="robotoy.jpg" alt="Sofa" id="t1img">
+            <h3>Sofa</h3>
+            <p class="price">$99</p>
+            <button class="add-to-cart">Add to Cart</button>
         </div>
 
-        <div class="product">
-            <img src="Robo Toy.jpeg" alt="Robo Toy">
-            <h2 style="color: black;">Robo Toy</h2>
-            <p style="color: black;">Price: $15</p>
-            <button class="add-to-cart" onclick="addToCart('Robo Toy', 15)">Add to Cart</button>
+        <div class="product-card">
+            <img src="teddy.jpg" alt="Bed" id="t2img">
+            <h3>Bed</h3>
+            <p class="price">$150</p>
+            <button class="add-to-cart">Add to Cart</button>
         </div>
-    </section>
 
+        <div class="product-card">
+            <img src="minitruck.jpg" alt="Luxury Sofa" id="t3img">
+            <h3 class="t3text">Luxury Sofa</h3>
+            <p class="t3price">$20</p>
+            <button class="add-to-cart" id="t3cart">Add to Cart</button>
+        </div>
+        <div class="product-card"></div>
+            <img src="videogame.jpg" alt="Single Sofa" id="t4img">
+            <h3 class="t4text">Ipad</h3>
+            <p class="t4price">$20</p>
+            <button class="add-to-cart" id="t4cart">Add to Cart</button>
+        </div>
+   
+    </div>
+
+    <!-- Column 2 -->
+    </div>
+    <div class="product-container2">
+        <div class="product-card">
+            <img src="hotwheels.jpg" alt="Console Table" id="t5img" >
+            <h3>Console Table</h3>
+            <p class="price">$17</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="legocar.jpg" alt="Double Bed" id="t5img" >
+            <h3>Double bed</h3>
+            <p class="price">$22</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="business.jpg" alt="TV cabinet" id="t5img" >
+            <h3>T.V Cabinet</h3>
+            <p class="price">$24</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card"></div>
+            <img src="puzzles.jpg" alt="Resin Table" id="t6img" >
+            <h3 class="t6text">Resin Table</h3>
+            <p class="t6price">$27</p>
+            <button class="add-to-cart" id="t6cart">Add to Cart</button>
+        </div>
+      
+    </div>
+    </div>
+    <!-- end -->
+     <!-- add to cart starts -->
     <script>
-        function addToCart(item, price) {
-            alert(item + " added to cart for $" + price);
-        }
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll(".add-to-cart");
+            buttons.forEach(button => {
+                button.addEventListener("click", function() {
+                    const productCard = this.parentElement;
+                    const productName = productCard.querySelector("h3").textContent;
+                    const productPrice = productCard.querySelector(".price").textContent;
+                    const productImage = productCard.querySelector("img").src;
+                    
+                    // Get cart items from localStorage or create an empty array
+                    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+                    // Add the new product to the cart
+                    cart.push({ name: productName, price: productPrice, image: productImage });
+    
+                    // Save updated cart back to localStorage
+                    localStorage.setItem("cart", JSON.stringify(cart));
+    
+                    alert(`${productName} added to cart!`);
+                });
+            });
+        });
     </script>
+<!-- add to cart ends -->
 </body>
 </html>

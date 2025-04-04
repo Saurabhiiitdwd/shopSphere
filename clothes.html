@@ -3,34 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clothes - Shopsphere</title>
-    <link rel="stylesheet" href="Shopsphere.css">
+    <title>Product Cards</title>
+    <link rel="stylesheet" href="clothes.css">
 </head>
 <body>
-    <header>
-        <h1>Clothes Collection</h1>
-    </header>
-    
-    <section class="products">
-        <div class="product">
-            <img src="tshirt.png" alt="T-Shirt">
-            <h2 style="color: black;">Stylish T-Shirt</h2>
-            <p style="color: black;">Price: $15</p>
-            <button class="add-to-cart" onclick="addToCart('Stylish T-Shirt', 15)">Add to Cart</button>
+
+    <div class="product-container">
+        <div class="product-card">
+            <img src="tshirt.png" alt="Stylish T-Shirt">
+            <h3>Stylish T-Shirt</h3>
+            <p class="price">$15</p>
+            <button>Add to Cart</button>
         </div>
 
-        <div class="product">
-            <img src="jeans.png" alt="Jeans">
-            <h2 style="color: black;">Denim Jeans</h2>
-            <p style="color: black;">Price: $25</p>
-            <button class="add-to-cart" onclick="addToCart('Denim Jeans', 25)">Add to Cart</button>
+        <div class="product-card">
+            <img src="jeans.png" alt="Denim Jeans">
+            <h3>Denim Jeans</h3>
+            <p class="price">$25</p>
+            <button>Add to Cart</button>
         </div>
-    </section>
 
-    <script>
-        function addToCart(item, price) {
-            alert(item + " added to cart for $" + price);
-        }
-    </script>
+        <div class="product-card">
+            <img src="Sports Jersy.jpg" alt="Polo Shirt">
+            <h3 class="s">Sports Jersy</h3>
+            <p class="price dollar">$20</p>
+            <button class="add">Add to Cart</button>
+        </div>
+        <div class="product-card"></div>
+            <img src="plainshirt.jpg" alt="Plain Shirt" class="plainImg">
+            <h3 class="plainshirt">Plain shirt</h3>
+            <p class="pricee">$20</p>
+            <button class="addd">Add to Cart</button>
+        </div>
+        <!-- <div class="product-card2"></div>
+        <img src="Redkurta.jpg" alt="Red Kurta" class="clothesimg1">
+        <h3 class="clothesheading1">Red Kurta</h3>
+        <p class="clothesprice1">$20</p>
+        <button class="clothescart1">Add to Cart</button> -->
+        
+    </div>
+    </div>
+    <div class="product-container2">
+        <div class="product-card">
+            <img src="Redkurta.jpg" alt="Red Kurta" class="clothsimg2" id="red" >
+            <h3>Red Kurta</h3>
+            <p class="price">$17</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="bluekurta.jpg" alt="bluekurta" class="clothsimg2" id="red" >
+            <h3>Blue Kurta</h3>
+            <p class="price">$22</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="onepiece.jpg" alt="onepiece" class="clothsimg2" id="red" >
+            <h3>One Piece</h3>
+            <p class="price">$24</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card"></div>
+            <img src="purplekurta.jpg" alt="purplekurta Kurta" class="clothsimg2" id="purple" >
+            <h3 class="heading1">Stylish Kurta</h3>
+            <p class="amount">$27</p>
+            <button class="cart1">Add to Cart</button>
+        </div>
+        <!-- <div class="product-card2"></div>
+        <img src="Redkurta.jpg" alt="Red Kurta" class="clothesimg1">
+        <h3 class="clothesheading1">Red Kurta</h3>
+        <p class="clothesprice1">$20</p>
+        <button class="clothescart1">Add to Cart</button> -->
+        
+    </div>
+    </div>
+
 </body>
 </html>
