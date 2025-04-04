@@ -8,181 +8,195 @@
     <link rel="stylesheet" href="Shopsphere.css">   
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo border"></div>
+    <div id="login">
+        <h2>Login to Shopsphere</h2>
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <p id="error"></p>
+    </div>
+    <div id="shopsphereInterface" style="display: none;">
+        <header>
+            <div class="navbar">
+                <div class="logo border"></div>
         
-            <div class="address border">
-                <p class="deliver">Deliver to</p>
-                <div class="icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p class="india">Dharwad</p>
+                <div class="address border">
+                    <p class="deliver">Deliver to</p>
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p class="india">Dharwad</p>
+                    </div>
+                </div>
+                <div class="search">
+                    <select class="select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search Shopsphere" id="placeholder">
+                    <div class="mag"><i class="fa-solid fa-magnifying-glass"></i></div>
+                </div>
+                <div class="sign-in border">
+                    <p><span>Hello, Saurabh</span></p>
+                    <p class="second">Account & Lists</p>
+                </div>
+                <div class="Return border">
+                    <p><span>Returns</span></p>
+                    <p class="second">& Orders</p>
+                </div>
+                <div class="cart border">
+                    <i class="fa-solid fa-cart-shopping" style="font-size: 35px;"></i>
+                    <sub>Cart</sub>
+                </div>
+                <div>
+                    <button onclick="logout()">Logout</button>
                 </div>
             </div>
-            <div class="search">
-                <select class="select">
-                    <option>All</option>
-                </select>
-                <input placeholder="Search Shopsphere" id="placeholder">
-                <div class="mag"><i class="fa-solid fa-magnifying-glass"></i></div>
-            </div>
-            <div class="sign-in border">
-                <p><span>Hello, sign in</span></p>
-                <p class="second">Account & Lists</p>
-            </div>
-            <div class="Return border">
-                <p><span>Returns</span></p>
-                <p class="second">& Orders</p>
-            </div>
-            <div class="cart border">
-                <i class="fa-solid fa-cart-shopping" style="font-size: 35px;"></i>
-                <sub>Cart</sub>
-            </div>
-        </div>
-        <div class="panel">
-            <div class="left">
-                <div class="all border">
-                    <i class="fa-solid fa-bars"></i>
-                    All
+            <div class="panel">
+                <div class="left">
+                    <div class="all border">
+                        <i class="fa-solid fa-bars"></i>
+                        All
+                    </div>
+                    <div class="deal border">
+                        <p>Today's Deals</p>
+                    </div>
+                    <div class="customer border">
+                        <p>Customer Service</p>
+                    </div>
+                    <div class="registry border">
+                        <p>Registry</p>
+                    </div>
+                    <div class="gift border">
+                        <p>Gift Cards</p>
+                    </div>
+                    <div class="sell border">
+                        <p>Sell</p>
+                    </div>
                 </div>
-                <div class="deal border">
-                    <p>Today's Deals</p>
-                </div>
-                <div class="customer border">
-                    <p>Customer Service</p>
-                </div>
-                <div class="registry border">
-                    <p>Registry</p>
-                </div>
-                <div class="gift border">
-                    <p>Gift Cards</p>
-                </div>
-                <div class="sell border">
-                    <p>Sell</p>
+                <div class="shop border">
+                    <p style="font-weight: 700">Shop deals in Electronics</p>
                 </div>
             </div>
-            <div class="shop border">
-                <p style="font-weight: 700">Shop deals in Electronics</p>
-            </div>
-        </div>
-    </header>
+        </header>
 
-    <div class="hero">
-        <div class="msg">
-            <p style="color: black;">You are on Shopsphere.com, You can also shop on Shopsphere Dharwad for millions of product with fast local delivery. <a href="#"> Click here to go to Shopsphere.in</a></p>
+        <div class="hero">
+            <div class="msg">
+                <p style="color: black;">You are on Shopsphere.com, You can also shop on Shopsphere Dharwad for millions of product with fast local delivery. <a href="#"> Click here to go to Shopsphere.in</a></p>
+            </div>
         </div>
+
+
+        <div class="shop-sec">
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Clothes</h2>
+                    <div class="img" style="background-image: url('box1_image.jpg');"></div>
+                    <a href="clothes.html" style="color: #007185">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Health & Personal care</h2>
+                    <div class="img" style="background-image: url('box2_image.jpg');"></div>
+                    <a href="health.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Furniture</h2>
+                    <div class="img" style="background-image: url('box3_image.jpg');"></div>
+                    <a href="furniture.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Electronics</h2>
+                    <div class="img" style="background-image: url('box4_image.jpg');"></div>
+                    <a href="electronic.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Beauty picks</h2>
+                    <div class="img" style="background-image: url('box5_image.jpg');"></div>
+                    <a href="beauty.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Pet Care</h2>
+                    <div class="img" style="background-image: url('box6_image.jpg');"></div>
+                    <a href="pet.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">New arrivals in Toys</h2>
+                    <div class="img" style="background-image: url('box7_image.jpg');"></div>
+                    <a href="toys.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+            <div class="border2 box">
+                <div class="box-content">
+                    <h2 style="color: black;">Discover fashion trends</h2>
+                    <div class="img" style="background-image: url('box8_image.jpg');"></div>
+                    <a href="fashion.html" style="color: #007185 ">See more</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="foot1">
+                <a href="#">Back to top</a>
+            </div>
+            <div class="foot2">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press Releases</a>
+                    <a href="#">Shopsphere Science</a>
+                </ul>
+                <ul>
+                    <p>Connect with Us</p>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </ul>
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a href="#">Protect and Build Your Brand</a>
+                    <a href="#">Advertise Your Products</a>
+                    <a href="#">Sell on Shopsphere</a>
+                    <a href="#">Supply to Shopsphere</a>
+                    <a href="#">Associates Programme</a>
+                    <a href="#">Fulfillment by Shopsphere</a>
+                </ul>
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a href="#">Your Account</a>
+                    <a href="#">Your Orders</a>
+                    <a href="#">Shipping Rates and Policies</a>
+                    <a href="#">Recycling</a>
+                    <a href="#">Recalls and Product Safety Alerts</a>
+                    <a href="#">Help</a>
+                </ul>
+            </div>
+            <div class="foot3">
+                <div class="logo">
+                </div>
+            </div>
+            <div class="foot4">
+                <div class="f4a">
+                    <a href="#">Conditions of Use</a>
+                    <a href="#">Privacy Notice</a>
+                    <a href="#">Interest-Based Ads</a>
+                </div>
+                <div class="f4b">
+                    © 1996–2025, Shopsphere.com, Inc. or its affiliates
+                </div>
+            </div>
+        </footer>
+
     </div>
-
-
-    <div class="shop-sec">
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Clothes</h2>
-                <div class="img" style="background-image: url('box1_image.jpg');"></div>
-                <a href="clothes.html" style="color: #007185">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Health & Personal care</h2>
-                <div class="img" style="background-image: url('box2_image.jpg');"></div>
-                <a href="health.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Furniture</h2>
-                <div class="img" style="background-image: url('box3_image.jpg');"></div>
-                <a href="furniture.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Electronics</h2>
-                <div class="img" style="background-image: url('box4_image.jpg');"></div>
-                <a href="electronic.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Beauty picks</h2>
-                <div class="img" style="background-image: url('box5_image.jpg');"></div>
-                <a href="beauty.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Pet Care</h2>
-                <div class="img" style="background-image: url('box6_image.jpg');"></div>
-                <a href="pet.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">New arrivals in Toys</h2>
-                <div class="img" style="background-image: url('box7_image.jpg');"></div>
-                <a href="toys.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-        <div class="border2 box">
-            <div class="box-content">
-                <h2 style="color: black;">Discover fashion trends</h2>
-                <div class="img" style="background-image: url('box8_image.jpg');"></div>
-                <a href="fashion.html" style="color: #007185 ">See more</a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="foot1">
-            <a href="#">Back to top</a>
-        </div>
-        <div class="foot2">
-            <ul>
-                <p>Get to Know Us</p>
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Press Releases</a>
-                <a href="#">Shopsphere Science</a>
-            </ul>
-            <ul>
-                <p>Connect with Us</p>
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </ul>
-            <ul>
-                <p>Make Money with Us</p>
-                <a href="#">Protect and Build Your Brand</a>
-                <a href="#">Advertise Your Products</a>
-                <a href="#">Sell on Shopsphere</a>
-                <a href="#">Supply to Shopsphere</a>
-                <a href="#">Associates Programme</a>
-                <a href="#">Fulfillment by Shopsphere</a>
-            </ul>
-            <ul>
-                <p>Let Us Help You</p>
-                <a href="#">Your Account</a>
-                <a href="#">Your Orders</a>
-                <a href="#">Shipping Rates and Policies</a>
-                <a href="#">Recycling</a>
-                <a href="#">Recalls and Product Safety Alerts</a>
-                <a href="#">Help</a>
-            </ul>
-        </div>
-        <div class="foot3">
-            <div class="logo">
-            </div>
-        </div>
-        <div class="foot4">
-            <div class="f4a">
-                <a href="#">Conditions of Use</a>
-                <a href="#">Privacy Notice</a>
-                <a href="#">Interest-Based Ads</a>
-            </div>
-            <div class="f4b">
-                © 1996–2025, Shopsphere.com, Inc. or its affiliates
-            </div>
-        </div>
-    </footer>
+    <script src="Shopsphere.js"></script>
 </body>
 </html>
